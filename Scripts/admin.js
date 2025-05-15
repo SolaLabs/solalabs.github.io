@@ -43,12 +43,6 @@ document.addEventListener('DOMContentLoaded', () =>
         }
         control.disabled = false;
     });
-    function display(response, type) 
-    {
-        console.log("Client recieved message:", response, type);
-        status.textContent = response;
-        status.className = type;
-    }
     async function clear() 
     {
         const token = localStorage.getItem('token');
@@ -82,5 +76,11 @@ document.addEventListener('DOMContentLoaded', () =>
         {
             alert("Unauthorized or session expired");
         }
+    }
+    function display(response, type) 
+    {
+        console.log("Client recieved message:", response, type);
+        status.textContent = response;
+        status.className = type;
     }
 });
