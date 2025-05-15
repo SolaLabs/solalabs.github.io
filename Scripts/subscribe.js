@@ -1,20 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => 
 {
-    console.log("Client loaded");
-    const form = document.getElementById('subscription');
+    console.log("Client subscription service loaded");
+    const form = document.getElementById('subscribe');
     const status = document.getElementById('status');
-    console.log(status.textContent)
     if (!form || !status) 
     {
-        console.error('Form or message element not found');
+        console.error('Form or status element not found');
         return;
     }
 
     const control = form.querySelector('button[type="submit"]');
     form.addEventListener('submit', async (event) => 
     {
+        console.log("Client subscription request submitted!");
+
         control.disabled = true;
-        console.log("Client form submitted!");
         event.preventDefault();
 
         const data = new FormData(form);

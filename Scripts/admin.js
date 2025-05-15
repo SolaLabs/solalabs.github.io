@@ -2,39 +2,55 @@ const server = "https://solalabs-server.onrender.com";
 
 document.addEventListener('DOMContentLoaded', () => 
 {
-    const form = document.getElementById('authorize');
+    console.log("Client login service loaded.");
+
+    const form = document.getElementById('admin');
     const status = document.getElementById('status');
-    console.log(status.textContent)
     if (!form || !status) 
     {
-        console.error('Form or message element not found');
+        console.error('Form or status element not found');
         return;
     }
 
     const control = form.querySelector('button[type="submit"]');
     form.addEventListener('submit', async (event) => 
     {
+        console.log("Client login request submitted!");
+
         control.disabled = true;
         event.preventDefault();
 
         const data = new FormData(form);
         const key = data.get('key');
 
-        const result = await fetch(`${server}/admin/authorize`, 
+        try 
         {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ key: key })
-        });
-
-        const authorization = await result.json();
-        if (result.ok) 
+            console.log("Client form data:", address);
+            const response = await fetch(`${server}/admin/authorize`, 
+            {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ key: key })
+            });
+            const result = await response.json();
+            console.log("Client form response:", result);
+            if (response.ok) 
+            {
+                display(authorization.message || "Login successful!", "success");
+                form.reset();
+            } 
+            else 
+            {
+                display(result.error || "Login failed.", "error");
+            }
+        } 
+        catch (error) 
         {
-            display(authorization.message || "Login successful!", "success");
-            localStorage.setItem('token', data.token);
-        } else 
+            display("An unexpected error occurred. Please try again later.", "error");
+        }
+        finally 
         {
-            display(authorization.error || "Login failed.", "error");
+            control.disabled = false;
         }
     });
     function display(response, type) 

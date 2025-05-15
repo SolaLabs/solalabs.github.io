@@ -1,35 +1,28 @@
-.newsletter 
+.form 
 {
     margin: 4%;
 }
-.newsletter #content 
+.form #content 
 {
     margin: 2%;
 }
-.newsletter #content p 
+.form #content p 
 {
     margin: 2%;
     text-align: center;
 }
-.newsletter #content #subscription 
+.form #content #interface 
 {
     display: flex;
     margin: 2%;
     align-items: center;
     justify-content: center;
 }
-.newsletter #content #disclaimer 
+.form #content #disclaimer 
 {
     font-size: 80%;
 }
-.newsletter #content #subscription input
-{
-    width: 50%;
-    height: 3em;
-    margin-right: 2%;
-    padding: 0 2%;
-}
-.newsletter #content #subscription button
+.form #content #interface button
 {
     background-color: rgb(0,0,0);
     border-style: none;
@@ -39,12 +32,19 @@
     height: 3em;
     width: 15%;
 }
-.newsletter #content .error
+.form #content #interface input
+{
+    width: 50%;
+    height: 3em;
+    margin-right: 2%;
+    padding: 0 2%;
+}
+.form #content .error
 {
   color: red;
   font-weight: bold;
 }
-.newsletter #content .success
+.admin #content .success
 {
   color: green;
   font-weight: bold;

@@ -7,9 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Styles/divider.css">
+        <link rel="stylesheet" href="Styles/forms.css">
         <link rel="stylesheet" href="Styles/links.css">
         <link rel="stylesheet" href="Styles/main.css">
-        <link rel="stylesheet" href="Styles/newsletter.css">
         <script src="Scripts/subscribe.js" defer></script>
     </head>
     <body>
@@ -35,12 +35,12 @@
                     </div>
                     <img id="image" class="line_icon" alt="Sola Line Icon" height = 360px width= 783px src = "../../Assets/Logos/sola_icon_line.png">
                 </div>
-                <div class="newsletter">
+                <div class="form">
                     <h2 id ="subtitle">Subscribe to our newsletter!</h2>
                     <div id="content">
                         <p>Sign up with your email address to receive news and updates. This includes release announcements, progress updates, and tips.</p>
                         <p id="status"></p>
-                        <form id="subscription" action="https://solalabs-server.onrender.com/subscribe" method="post">
+                        <form class="interface" id="subscibe" action="https://solalabs-server.onrender.com/subscribe" method="post">
                             <input type="email" name="address" placeholder="Enter your email address." required>
                             <button type="submit">Subscribe</button>
                         </form>
