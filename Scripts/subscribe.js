@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () =>
     }
     function display(response, type) 
     {
-        console.log("Client recieved message:", response, error);
+        console.log("Client recieved message:", response, type);
         status.textContent = response;
         status.className = type;
     }
