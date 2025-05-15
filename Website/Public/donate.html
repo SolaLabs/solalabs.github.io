@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Donate</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/divider.css">
+        <link rel="stylesheet" href="Styles/links.css">
+        <link rel="stylesheet" href="Styles/main.css">
+        <link rel="stylesheet" href="Styles/newsletter.css">
+        <script src="Scripts/subscribe.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img id="icon" alt="Sola Icon" height = 50px width= 100px src = "../../Assets/Logos/sola_icon_plain.png"></a>
+            <div class="links">
+                <a id="about" alt="About Us" href="about.html">About</a>
+                <a id="contact" alt="See our Contact" href="contact.html">Contact</a>
+                <a class="current" id="donate" alt="Go to Donations">Donate</a>
+                <a id="news" alt="View our News" href="news.html">News</a>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <div class="divider">
+                    <div id="content">
+                        <h1 id ="title">Hi, we're Sola.</h1>
+                        <h2 id ="subtitle">It's nice to meet you.</h2>
+                        <p>Get started on this journey with us by donating, subscribing to our newsletter, requesting to be a tester, or following our blog. While we’re developing, you can stay updated on our progress, or provide valuable insight. We appreciate any feedback you have to offer, and your donation if you want to support us!</p>
+                        <div id="navigation">
+                            <button id="donate" alt="Donate on PayPal" onclick="window.location.href='https://www.paypal.com/donate/?hosted_button_id=R9J29XWPD3CZ2'">Donate</button>
+                        </div>
+                    </div>
+                    <img id="image" class="line_icon" alt="Sola Line Icon" height = 360px width= 783px src = "../../Assets/Logos/sola_icon_line.png">
+                </div>
+                <div class="newsletter">
+                    <h2 id ="subtitle">Subscribe to our newsletter!</h2>
+                    <div id="content">
+                        <p>Sign up with your email address to receive news and updates. This includes release announcements, progress updates, and tips.</p>
+                        <p id="subscription-message"></p>
+                        <form id="subscription" action="/subscribe" method="post" nonvalidate>
+                            <input type="email" name="address" placeholder="Enter your email address." required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p id="disclaimer">We respect your privacy. You email address will not be sold or distributed to any other third part.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="foot">2025 Sola Labs Development</p>
+            <div class="links">
+                <a id="donate" alt="Support us on PayPal!" href="https://www.paypal.com/donate/?hosted_button_id=R9J29XWPD3CZ2">Donate</p>
+                <a id="email" alt="Send us an email!" href="MailTo:sola.labs.development@gmail.com">Email</p>
+                <a id="github" alt="Find our software on GitHub!" href="https://github.com/SolaLabs">GitHub</a>
+            </div>
+        </footer>
+    </body>
+</html>

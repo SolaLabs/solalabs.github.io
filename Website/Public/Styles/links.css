@@ -1,0 +1,16 @@
+.links 
+{
+    display: flex;
+    column-gap: 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+.links a 
+{
+    color: black;
+    text-decoration: none;
+}
+.links .current 
+{
+    text-decoration: underline;
+}

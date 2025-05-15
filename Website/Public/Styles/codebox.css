@@ -1,0 +1,51 @@
+.codebox 
+{
+    background-color: rgb(50,50,50);
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 2%;
+}
+.codebox p 
+{
+    color: white;
+    margin: 0;
+}
+.codebox .break
+{
+    margin-right: 0.5%;
+}
+.codebox .tab
+{
+    margin-left: 2%;
+}
+.codebox .line 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.codebox .block
+{
+    color: rgb(0,150,255);
+}
+.codebox .command, .codebox .statement
+{
+    color: rgb(0,100,200);
+}
+.codebox .end
+{
+    color: rgb(200,200,200);
+}
+.codebox .format
+{
+    color: rgb(255, 150, 0);
+}
+.codebox .negative
+{
+    color: red;
+}
+.codebox .positive
+{
+    color: rgb(0, 255, 150);
+}

@@ -1,0 +1,51 @@
+.newsletter 
+{
+    margin: 4%;
+}
+.newsletter #content 
+{
+    margin: 2%;
+}
+.newsletter #content p 
+{
+    margin: 2%;
+    text-align: center;
+}
+.newsletter #content #subscription 
+{
+    display: flex;
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter #content #disclaimer 
+{
+    font-size: 80%;
+}
+.newsletter #content #subscription input
+{
+    width: 50%;
+    height: 3em;
+    margin-right: 2%;
+    padding: 0 2%;
+}
+.newsletter #content #subscription button
+{
+    background-color: rgb(0,0,0);
+    border-style: none;
+    border-radius: 5%;
+    box-shadow: rgb(150,150,150) 0 10px 15px;
+    color: white;
+    height: 3em;
+    width: 15%;
+}
+.newsletter #content .error
+{
+  color: red;
+  font-weight: bold;
+}
+.newsletter #content .success
+{
+  color: green;
+  font-weight: bold;
+}

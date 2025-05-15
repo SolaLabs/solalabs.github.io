@@ -1,0 +1,75 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Helvetica', sans-serif;
+}
+header, .content, footer
+{
+    padding: 2% 15%;
+}
+
+/* Header */
+header 
+{
+    background-image: linear-gradient(to bottom,  rgb(0,150,255), #ffffff);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main */
+main 
+{
+    height: 100%;
+}
+main h1, main h2 
+{
+    font-weight: normal;
+    text-align: center;
+}
+main #title 
+{
+    font-size: 600%;
+}
+main #subtitle 
+{
+    font-size: 250%;
+}
+main .line_icon 
+{
+    width: 50%;
+    height: 25%;
+}
+main #error_icon
+{
+    margin: 0% 25%;
+}
+main p
+{
+    margin: 2%;
+}
+main .description 
+{
+    padding: 0 10%;
+    text-align: center;
+}
+
+/* Footer */
+footer 
+{
+    background-color: rgb(255,200,0);
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+}
+footer .links 
+{
+    margin-right: 2.5%;
+}
+#foot 
+{
+    font-size: 150%;
+}

@@ -1,0 +1,18 @@
+.ribbon 
+{
+    background-color: rgb(255, 200, 0);
+    display: flex;
+    padding: 0% 15%;
+}
+.ribbon #title 
+{
+    font-size: 300%;
+    margin: 2%;
+    text-align: left;
+    width: 25%;
+}
+.ribbon #content 
+{
+    margin: 2%;
+    width: 75%;
+}
