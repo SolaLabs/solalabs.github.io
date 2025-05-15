@@ -2,7 +2,7 @@ const server = "https://solalabs-server.onrender.com";
 
 document.addEventListener('DOMContentLoaded', () => 
 {
-    const form = document.getElementById('login');
+    const form = document.getElementById('authorize');
     const status = document.getElementById('status');
     console.log(status.textContent)
     if (!form || !status) 

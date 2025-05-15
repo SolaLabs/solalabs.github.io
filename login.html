@@ -7,8 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Styles/links.css">
+        <link rel="stylesheet" href="Styles/login.css">
         <link rel="stylesheet" href="Styles/main.css">
-         <script src="Scripts/admin.js" defer></script>
+        <script src="Scripts/admin.js" defer></script>
     </head>
     <body>
         <header>
@@ -21,13 +22,15 @@
             </div>
         </header>
         <main>
-            <div class="content">
-                <h1 id ="title">Login</h1>
-                <h2 id ="subtitle">Please enter your key.</h2>
-                <form id="login" action="https://solalabs-server.onrender.com/admin/authorize" method="post">
-                    <input type="password" name="key" placeholder="Key" required>
-                    <button type="submit">Login</button>
+            <div class="newsletter">
+                <h2 id ="subtitle">Login</h2>
+                <div id="content">
+                    <p>Please enter your key.</p>
                     <p id="status"></p>
+                    <form id="authorize" action="https://solalabs-server.onrender.com/admin/authorize" method="post">
+                        <input type="password" name="key" placeholder="Key" required>
+                        <button type="submit">Login</button>
+                </div>
             </div>
         </main>
         <footer>
