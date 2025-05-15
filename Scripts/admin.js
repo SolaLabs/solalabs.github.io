@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () =>
         const data = new FormData(form);
         const key = data.get('key');
 
-        const result = await fetch(`${server}/admin/auth`, 
+        const result = await fetch(`${server}/admin/authorize`, 
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
