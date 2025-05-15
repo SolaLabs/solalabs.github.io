@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () =>
 
         try 
         {
-            console.log("Client sent data:", address);
+            console.log("Client sent data:", key);
             const response = await fetch(`${server}/admin/authorize`, 
             {
                 method: 'POST',
