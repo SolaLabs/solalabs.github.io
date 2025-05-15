@@ -22,7 +22,7 @@
 {
     font-size: 80%;
 }
-.form #content #interface button
+.form #content .interface button
 {
     background-color: rgb(0,0,0);
     border-style: none;
@@ -32,7 +32,7 @@
     height: 3em;
     width: 15%;
 }
-.form #content #interface input
+.form #content .interface input
 {
     width: 50%;
     height: 3em;
