@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () =>
                 body: JSON.stringify({ address: address })
             });
             const result = await response.json();
-            console.log("Client form response:", result);
+            console.log("Client recieved response:", result);
             if (response.ok) 
             {
                 display(result.message || "Thank you for your subscription!", "success");
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () =>
         } 
         catch (error) 
         {
-            display("An unexpected error occurred. Please try again later.", "error");
+            display(error.Message || "An unexpected error occured. Please try again later.", "error");
         }
         finally 
         {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () =>
     }
     function display(response, type) 
     {
-        console.log("Client form message:", response, type);
+        console.log("Client recieved message:", response, error);
         status.textContent = response;
         status.className = type;
     }
