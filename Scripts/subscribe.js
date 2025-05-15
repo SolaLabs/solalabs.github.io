@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () =>
         }
         try 
         {
-            console.log("Client form data:", address);
+            console.log("Client sent data:", address);
             const response = await fetch(form.action, 
             {
                 method: 'POST',
