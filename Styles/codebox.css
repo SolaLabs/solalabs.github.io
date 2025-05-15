@@ -1,7 +1,6 @@
 .codebox 
 {
     background-color: rgb(50,50,50);
-    border-radius: 2%;
     box-shadow: rgb(150,150,150) 0 10px 15px;
     display: flex;
     flex-direction: column;
