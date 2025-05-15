@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', () =>
         event.preventDefault();
 
         const data = new FormData(form);
-        const address = data.get('key');
+        const key = data.get('key');
 
         const result = await fetch(`${server}/admin/auth`, 
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ password: key })
+            body: JSON.stringify({ token: key })
         });
 
         const authorization = await result.json();
