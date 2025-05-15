@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () =>
             console.log("Client recieved response:", result);
             if (response.ok) 
             {
-                display(result.message || "Thank you for your subscription!", "success");
+                display("Thank you for your subscription!", "success");
                 form.reset();
             } 
             else 
