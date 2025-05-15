@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () =>
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ password })
+            body: JSON.stringify({ password: key })
         });
 
         const authorization = await result.json();
