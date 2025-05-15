@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', () =>
 {
     console.log("Client loaded");
     const form = document.getElementById('subscription');
-    const message = document.getElementById('subscription-message');
-    console.log(message.textContent)
-    if (!form || !message) 
+    const status = document.getElementById('status');
+    console.log(status.textContent)
+    if (!form || !status) 
     {
         console.error('Form or message element not found');
         return;
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () =>
     function display(response, type) 
     {
         console.log("Client form message:", response, type);
-        message.textContent = response;
-        message.className = type;
+        status.textContent = response;
+        status.className = type;
     }
 });
