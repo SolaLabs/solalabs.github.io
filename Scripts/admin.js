@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () =>
         console.log("Client recieved response:", result);
         if (response.ok) 
         {
-            display(authorization.message || "Login successful!", "success");
+            display(result.message || "Login successful!", "success");
             form.reset();
         } 
         else 
