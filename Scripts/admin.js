@@ -23,35 +23,25 @@ document.addEventListener('DOMContentLoaded', () =>
         const data = new FormData(form);
         const key = data.get('key');
 
-        try 
+        console.log("Client sent data:", key);
+        const response = await fetch(`${server}/admin/authorize`, 
         {
-            console.log("Client sent data:", key);
-            const response = await fetch(`${server}/admin/authorize`, 
-            {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ key: key })
-            });
-            const result = await response.json();
-            console.log("Client recieved response:", result);
-            if (response.ok) 
-            {
-                display(authorization.message || "Login successful!", "success");
-                form.reset();
-            } 
-            else 
-            {
-                display(result.error || "Login failed.", "error");
-            }
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ key: key })
+        });
+        const result = await response.json();
+        console.log("Client recieved response:", result);
+        if (response.ok) 
+        {
+            display(authorization.message || "Login successful!", "success");
+            form.reset();
         } 
-        catch (error) 
+        else 
         {
-            display(error.Message || "An unexpected error occured. Please try again later.", "error");
+            display(result.error || "Login failed.", "error");
         }
-        finally 
-        {
-            control.disabled = false;
-        }
+        control.disabled = false;
     });
     function display(response, type) 
     {
