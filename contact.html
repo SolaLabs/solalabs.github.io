@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sola Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/divider.css">
+        <link rel="stylesheet" href="Styles/forms.css">
+        <link rel="stylesheet" href="Styles/links.css">
+        <link rel="stylesheet" href="Styles/main.css">
+    </head>
+    <body>
+        <header>
+            <a href="index"><img id="icon" alt="Sola Icon" height = 50px width= 100px src = "../../Assets/Logos/sola_icon_plain.png"></a>
+            <div class="links">
+                <a id="about" alt="About Us" href="about">About</a>
+                <a class="current" id="contact" alt="See our Contact">Contact</a>
+                <a id="donate" alt="Go to Donations" href="donate">Donate</a>
+                <a id="news" alt="View our News" href="news">News</a>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <div class="divider">
+                    <div id="content">
+                        <h1 id ="title">Contact Us</h1>
+                        <h2 id ="subtitle">We'd love to hear from you.</h2>
+                        <p>Are you interested in testing our software? Have you encountered a bug? Facing a difficult issue with syntax? Maybe you’d just like to give us a suggestion on development?</p>
+                        <p>Send us a message, we want to know what you have to say!</p>
+                        <p>For bug requests, we will send a follow up message detailing any additional information we may need to complete your request. This may include code snippets, logs, platform information, screenshots, and debugging information.</p>
+                        <p>Please allow for up to 48 hours for us to process your request. Notice, we will never ask for personal information, such as usernames, passwords, or payment information.</p>
+                        <p>Do not voluantarily submit personal information, and verify the sender of all email address before replying to any message.</p>
+                    </div>
+                    <div class="form">
+                        <div id="content">
+                            <img class="icon" alt="Sola Icon Only" height = 36px width= 80px src = "../../Assets/Logos/sola_icon_only.png">
+                            <p id="status"></p>
+                            <form class="interface" id="contact" action="/contact" method="post">
+                                <div class="field">
+                                    <p class="title">Name</p>
+                                    <div id="content">
+                                        <div class="interface">
+                                            <input type="text" name="first_name" placeholder="First Name">
+                                            <input type="text" name="last_name" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <p class="title">Email*</p>
+                                    <input type="email" name="address" placeholder="Enter your email." required>
+                                    <div id="content">
+                                        <div class="interface">
+                                            <input class="checkbox" type="checkbox" name="subscribe" value="subscribe" checked="true" required>
+                                            <p>Subscirbe to our newsletter.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="title">Message *</p>
+                                <input type="text" name="message" placeholder="Enter your message." required>
+                                <button type="submit">Send</button>
+                            </form>
+                            <p id="disclaimer">We respect your privacy. Your personal information will not be sold or distributed to any other third part.</p>
+                            <p id="disclaimer">* This field is required.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="foot">2025 Sola Labs Development</p>
+            <div class="links">
+                <a id="donate" alt="Support us on PayPal!" href="https://www.paypal.com/donate/?hosted_button_id=R9J29XWPD3CZ2">Donate</p>
+                <a id="email" alt="Send us an email!" href="MailTo:sola.labs.development@gmail.com">Email</p>
+                <a id="github" alt="Find our software on GitHub!" href="https://github.com/SolaLabs">GitHub</a>
+            </div>
+        </footer>
+    </body>
+</html>

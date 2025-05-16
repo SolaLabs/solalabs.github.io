@@ -38,13 +38,10 @@ main #subtitle
 {
     font-size: 250%;
 }
-main .line_icon 
+main .icon 
 {
     width: 50%;
     height: 25%;
-}
-main #error_icon
-{
     margin: 0% 25%;
 }
 main p
