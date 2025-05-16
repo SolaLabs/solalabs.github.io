@@ -1,11 +1,15 @@
+const local = location.hostname == 'localhost' || location.hostname == '127.0.0.1';
+const server = local ? "http://localhost:3000" : "https://solalabs-server.onrender.com";
+
 document.addEventListener('DOMContentLoaded', () => 
 {
     console.log("Client subscription service loaded");
+    console.log(server);
     const form = document.getElementById('subscribe');
     const status = document.getElementById('status');
     if (!form || !status) 
     {
-        console.error('Form or status element not found');
+        console.error('Subscription form not found!');
         return;
     }
 
@@ -25,10 +29,11 @@ document.addEventListener('DOMContentLoaded', () =>
             display("Please enter a valid email address.", "error");
             return;
         }
+        console.log("Client sent data:", address);
         try 
         {
-            console.log("Client sent data:", address);
-            const response = await fetch(form.action, 
+            const action = form.getAttribute("action");
+            const response = await fetch(`${server}${action}`, 
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -38,17 +43,19 @@ document.addEventListener('DOMContentLoaded', () =>
             console.log("Client recieved response:", result);
             if (response.ok) 
             {
-                display("Thank you for your subscription!", "success");
+                display(result.message || "Thank you for your subscription!", "success");
                 form.reset();
             } 
             else 
             {
                 display(result.error || "Subscription failed. Please try again later.", "error");
             }
-        } 
+        }
         catch (error) 
         {
-            display(error.Message || "An unexpected error occured. Please try again later.", "error");
+            console.error("Error sending request:", error);
+            display(error || "Unable to subscribe. Please try again later.", "error");
+            return;
         }
         finally 
         {
