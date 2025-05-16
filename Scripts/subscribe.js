@@ -4,7 +4,7 @@ const server = local ? "http://localhost:3000" : "https://solalabs-server.onrend
 document.addEventListener('DOMContentLoaded', () => 
 {
     console.log("Client subscription service loaded");
-    console.log(server);
+    
     const form = document.getElementById('subscribe');
     const status = document.getElementById('status');
     if (!form || !status) 
