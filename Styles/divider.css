@@ -1,7 +1,9 @@
 .divider 
 {
+    align-content: start;
     display: flex;
     margin: 4%;
+    justify-content: center;
 }
 .divider #image
 {
@@ -20,7 +22,7 @@
     color: white;
     padding: 2% 0;
 }
-.divider #donate
+.divider .accent
 {
     background-color: rgb(255,200,0);
     color: black
@@ -50,5 +52,5 @@
     display: flex;
     justify-content: space-around;
     margin: 10% 0 4% 0;
-    height: 10%;
+    height: 4em;
 }

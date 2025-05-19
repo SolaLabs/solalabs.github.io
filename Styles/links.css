@@ -5,12 +5,25 @@
     justify-content: space-around;
     align-items: center;
 }
-.links a 
+.linkbar
+{
+    font-weight: bold;
+}
+.links a, .linkbar a
 {
     color: black;
     text-decoration: none;
+    font-weight: normal;
 }
-.links .current 
+.links .current, .linkbar .current
 {
     text-decoration: underline;
+}
+
+.categories
+{
+    display: flex;
+    column-gap: 1%;
+    align-items: center;
+    margin: 2% 0;
 }

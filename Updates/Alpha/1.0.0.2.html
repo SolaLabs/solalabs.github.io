@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sola Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../Styles/changelog.css">
+        <link rel="stylesheet" href="../../Styles/buttons.css">
+        <link rel="stylesheet" href="../../Styles/divider.css">
+        <link rel="stylesheet" href="../../Styles/links.css">
+        <link rel="stylesheet" href="../../Styles/main.css">
+    </head>
+    <body>
+        <header>
+            <a href="../../index.html"><img id="icon" alt="Sola Icon" height = 50px width= 100px src = "../../Assets/Logos/sola_icon_plain.png"></a>
+            <div class="links">
+                <a id="about" href="../../about.html">About</a>
+                <a id="contact" href="../../contact.html">Contact</a>
+                <a id="donate" href="../../donate.html">Donate</a>
+                <a id="news" class="current" href="../../news.html">News</a>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <p class="linkbar"><a href="../../news.html">News</a> > <a href="../../updates.html">Updates</a> > <a href="../alpha.html">Alpha</a> > <a class="current">1.0.0.2</a></p>
+                <h1 id="title">Version 1.0.0.2 Alpha</h1>
+                <h2 id="subtitle">Tuesday, May 13th 2025</h2>
+                <h3 class="description">Revision 2</h3>
+                <div class="divider"> 
+                    <img class="icon" id="image" src="../../../../Assets/Archive/Sola.png" alt="Original Sola Icon">
+                    <div id="content"> 
+                        <div class="changelog"> 
+                            <h3 class="section">Depreciated:</h3>
+                            <ul>
+                                <li>system.command()</li>
+                            </ul>
+                            <h3 class="section">Aesthetic:</h3>
+                            <ul>
+                                <li>Commands requiring specific parameters now return a brief warning describing the expected format.</li>
+                            </ul>
+                            <h3 class="section">Functional:</h3>
+                            <ul>
+                                <li>Added support for specialized project files referencing multiple source files.</li>
+                                <li>Actions, objects, and variables can be declared with expressional parameters using the 'default?' keyword.</li>
+                                <li>Collection based commands now return results more appropriately.</li>
+                                <li>Directory, file, and path commands now return false if a command is unable to be completed.</li>
+                                <li>'math.random()' command for working with random numbers.</li>
+                                <li>Task-based and asynchronous commands using the 'task' and 'await' keywords.</li>
+                                <li>Try logic using default, catch, and continue groups, and custom arguments.</li>
+                                <li>Variable property shortcuts using let, get, and set groups.</li>
+                            </ul>
+                            <h3 class="section">Bug Fixes:</h3>
+                            <ul>
+                                <li>Fixed an issue where source files were being improperly imported.</li>
+                                <li>Reworked switch and case statement logic.</li>
+                            </ul>
+                            <h3 class="section">Environment:</h3>
+                            <ul>
+                                <li>Converted storage systems to use a variable class that wraps values with properties and methods for more advanced data retrieval.</li>
+                                <li>Increased documentation.</li>
+                                <li>Migrated methods to utility classes for increased maintainability and future development.</li>
+                                <li>Merged several text utilities into collections methods with similar use-case.</li>
+                                <li>Reworked comments and line execution system for future updates.</li>
+                                <li>Tagging system for more efficient definition recognition.</li>
+                                <li>Wrapped logic for several commands with exception handling for easier development.</li>
+                            </ul>
+                        </div>
+                        <div id="navigation">
+                            <button id="view" class="accent" onclick="window.location.href='https://github.com/SolaLabs/sola.compiler/releases/tag/1.0.0.2-Alpha'">View on GitHub</button>
+                            <button id="changlog" onclick="window.location.href='https://github.com/SolaLabs/sola.compiler/compare/1.0.0.1-Alpha...1.0.0.2-Alpha'">Changelog</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <p id="foot">2025 Sola Labs Development</p>
+            <div class="links">
+                <a id="donate" href="https://www.paypal.com/donate/?hosted_button_id=R9J29XWPD3CZ2">Donate</p>
+                <a id="email" href="MailTo:sola.labs.development@gmail.com">Email</p>
+                <a id="github" href="https://github.com/SolaLabs">GitHub</a>
+            </div>
+        </footer>
+    </body>
+</html>

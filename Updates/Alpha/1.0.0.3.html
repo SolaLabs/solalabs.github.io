@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sola Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../Styles/changelog.css">
+        <link rel="stylesheet" href="../../Styles/divider.css">
+        <link rel="stylesheet" href="../../Styles/links.css">
+        <link rel="stylesheet" href="../../Styles/main.css">
+    </head>
+    <body>
+        <header>
+            <a href="../../index.html"><img id="icon" alt="Sola Icon" height = 50px width= 100px src = "../../Assets/Logos/sola_icon_plain.png"></a>
+            <div class="links">
+                <a id="about" href="../../about.html">About</a>
+                <a id="contact" href="../../contact.html">Contact</a>
+                <a id="donate" href="../../donate.html">Donate</a>
+                <a id="news" class="current" href="../../news.html">News</a>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <p class="linkbar"><a href="../../news.html">News</a> > <a href="../../updates.html">Updates</a> > <a href="../alpha.html">Alpha</a> > <a class="current">1.0.0.3</a></p>
+                <h1 id="title">Version 1.0.0.3 Alpha</h1>
+                <h2 id="subtitle">Tuesday, May 13th 2025</h2>
+                <h3 class="description">Revision 3</h3>
+                <div class="divider"> 
+                    <img class="icon" id="image" src="../../../../Assets/Icons/icon_512x512.png" alt="Sola Icon">
+                    <div id="content"> 
+                        <div class="changelog">
+                            <h3 id="title">What's new?</h3>
+                            <h3 class="section">Aesthetic:</h3>
+                            <ul>
+                                <li>Added line and source information to build and warning logs.</li>
+                                <li>Defaulted console, debug, and log commands to simplify development.</li>
+                                <li>Designated MacOS, Window, and Platform-Independent versions with version information, and icons.</li>
+                                <li>Updated Console settings with optional toggles for line and source control.</li>
+                                <li>Updated application package icon.</li>
+                            </ul>
+                            <h3 class="section">Functional:</h3>
+                            <ul>
+                                <li>Alpha version of Air (Automatic Interface Rendering) GUI langauge for interface compilation.</li>
+                                <li>Added additional commands for intercting with the console, such as toggling it's visibility.</li>
+                                <li>Split Salt (Sola Application Language Translator) shell language for application-level scripting.</li>
+                                <li>Implemented Sea (Sola Embedded Annotation) markup language for comment-based documentation.</li>
+                                <li>Included a new example project 'Deploy.sola' that launches a blank stand-alone window.</li>
+                            </ul>
+                            <h3 class="section">Bug Fixes:</h3>
+                            <ul>
+                                <li>'file.create()' now verifies a file does not already exist to avoid overwriting by default.</li>
+                                <li>'file.overwrite()' explicity deletes and overwrites specified filepaths.</li>
+                            </ul>
+                            <h3 class="section">Environment:</h3>
+                            <ul>
+                               <li>Added debugging for deployment testing.</li>
+                               <li>Reconfigured Sola application framework to be console independent.</li>
+                            </ul>
+                        </div>
+                        <div class="changelog"> 
+                            <h3 id="title">What's next?</h3>
+                            <h3 class="section">Aesthetic:</h3>
+                            <ul>
+                                <li>Consolidated log menu for easier output switching.</li>
+                                <li>Built-in execute, recompile and suspend buttons.</li>
+                                <li>Native file system visual-navigation support.</li>
+                                <li>Ouput logs organized by filters.</li>
+                            </ul>
+                            <h3 class="section">Functional:</h3>
+                            <ul>
+                                <li>Salt-based debugging breakpoints.</li>
+                            </ul>
+                            <h3 class="section">Environment:</h3>
+                            <ul>
+                                <li>Expanded Air functionality for enhanced user-interface development.</li>
+                                <li>Implement functionality to open '.sola' files with the compiler by default, making them executable.</li>
+                            </ul>
+                        </div>
+                        <div id="navigation">
+                            <button id="view" class="accent" onclick="window.location.href='https://github.com/SolaLabs/sola.compiler/releases/tag/1.0.0.3-Alpha'">View on GitHub</button>
+                            <button id="changlog" onclick="window.location.href='https://github.com/SolaLabs/sola.compiler/compare/1.0.0.2-Alpha...1.0.0.3-Alpha'">Changelog</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <p id="foot">2025 Sola Labs Development</p>
+            <div class="links">
+                <a id="donate" href="https://www.paypal.com/donate/?hosted_button_id=R9J29XWPD3CZ2">Donate</p>
+                <a id="email" href="MailTo:sola.labs.development@gmail.com">Email</p>
+                <a id="github" href="https://github.com/SolaLabs">GitHub</a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>News</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/buttons.css">
+        <link rel="stylesheet" href="Styles/divider.css">
+        <link rel="stylesheet" href="Styles/links.css">
+        <link rel="stylesheet" href="Styles/main.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img id="icon" alt="Sola Icon" height = 50px width= 100px src = "../../Assets/Logos/sola_icon_plain.png"></a>
+            <div class="links">
+                <a id="about" href="about.html">About</a>
+                <a id="contact" href="contact.html">Contact</a>
+                <a id="donate" href="donate.html">Donate</a>
+                <a class="current" id="news">News</a>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <h1 id ="title">What's new?</h1>
+                <h2 id ="subtitle">Select a category to find out.</h2>
+                <div class="categories">
+                    <button class="navigation" id="announcements" onclick="window.location.href='announcements.html'">Announcements</button>
+                    <button class="navigation" id="tutorials" onclick="window.location.href='tutorials.html'">Tutorials</button>
+                    <button class="navigation" id="updates" onclick="window.location.href='updates.html'">Updates</button>
+                </div>
+            </div>
+            <div class="content">
+                <h2 id ="subtitle">Recent Announcements</h2>
+                <div class="divider">
+                    <div id="content">
+                        <h2 id = "title">Version 1.0.0.3 Alpha Release</h2>
+                        <p>Sunday, May 18th, 2025</p>
+                        <p>Our newest revision of the Sola Compiler is now available to download!</p>
+                        <p>This application is available for MacOS, Windows, and Linee.
+                        Please view our <a href="">license</a> agreement before using this software.</p>
+                        </p>
+                        <div id="navigation">
+                            <button id="download" class="accent" onclick="window.location.href='https://github.com/SolaLabs/sola.compiler/releases/tag/1.0.0.3-Alpha'">Download</button>
+                            <button id="more" onclick="window.location.href='Updates/Alpha/1.0.0.3.html'">More</button>
+                        </div>
+                    </div>
+                    <img id="image" class="icon" alt="Sola Icon Only" height = 360px width= 783px src = "../../Assets/Logos/sola_icon_only.png">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="foot">2025 Sola Labs Development</p>
+            <div class="links">
+                <a id="donate" href="https://www.paypal.com/donate/?hosted_button_id=R9J29XWPD3CZ2">Donate</p>
+                <a id="email" href="MailTo:sola.labs.development@gmail.com">Email</p>
+                <a id="github" href="https://github.com/SolaLabs">GitHub</a>
+            </div>
+        </footer>
+    </body>
+</html>

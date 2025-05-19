@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sola Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../Styles/changelog.css">
+        <link rel="stylesheet" href="../../Styles/divider.css">
+        <link rel="stylesheet" href="../../Styles/links.css">
+        <link rel="stylesheet" href="../../Styles/main.css">
+    </head>
+    <body>
+        <header>
+            <a href="../../index.html"><img id="icon" alt="Sola Icon" height = 50px width= 100px src = "../../Assets/Logos/sola_icon_plain.png"></a>
+            <div class="links">
+                <a id="about" href="../../about.html">About</a>
+                <a id="contact" href="../../contact.html">Contact</a>
+                <a id="donate" href="../../donate.html">Donate</a>
+                <a id="news" class="current" href="../../news.html">News</a>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <p class="linkbar"><a href="../../news.html">News</a> > <a href="../../updates.html">Updates</a> > <a href="../alpha.html">Alpha</a> > <a class="current">1.0.0.1</a></p>
+                <h1 id="title">Version 1.0.0.1 Alpha</h1>
+                <h2 id="subtitle">Wednesday, April 30th 2025</h2>
+                <h3 class="description">Revision 2</h3>
+                <div class="divider"> 
+                    <img class="icon" id="image" src="../../../../Assets/Archive/Sola.png" alt="Original Sola Icon">
+                    <div id="content"> 
+                        <div class="changelog"> 
+                            <h3 class="section">Aesthetic:</h3>
+                            <ul>
+                                <li>Tweaked action execution, variable definition, and implicit formatting to improve code write-ability.</li>
+                                <li>Collections can now be defined using "[]" initializers at the end of their defined name. For example: "var list[]".</li>
+                                <li>Console and debug command now implicitly use the subcommand "line" by default.</li>
+                                <li>Added "!" and "?" logic for binary results and void checks.</li>
+                                <li>Expanded upon and refined statement expression terms.</li>
+                                <li>Implemented warning messages and a warning log.</li>
+                                <li>Improved warning message formatting.</li>
+                                <li>Added line positions to build messages.</li>
+                            </ul>
+                            <h3 class="section">Functional:</h3>
+                            <ul>
+                                <li>Implemented restricted syntax for definitions.</li>
+                                <li>Added default value returns for binary values and voids.</li>
+                                <li>Added logic for collections.</li>
+                                <li>Added support for collection command and formatting methods.</li>
+                                <li>Added action, object, and spacing instancing.<br>
+                                ** Please note this feature is currently untested.</li>
+                                <li>Added "case" and "default" statements for switch logic.</li>
+                                <li>Reworked comparative logic for if statements.</li>
+                                <li>Completed implementation of date/time commands and formatting.<br>
+                                ** This feature is only partially tested.</li>
+                            </ul>
+                            <h3 class="section">Bug Fixes:</h3>
+                            <ul>
+                                <li>Fixed file-system management logic when appending and writing.</li>
+                            </ul>
+                            <h3 class="section">Environment:</h3>
+                            <ul>
+                                <li>Modularized block definitions, and reworked Structure.cs for block instancing.</li>
+                                <li>Added Void() class to allow for variable that are defined by name only.</li>
+                            </ul>
+                        </div>
+                        <div id="navigation">
+                            <button id="view" class="accent" onclick="window.location.href='https://github.com/SolaLabs/sola.compiler/releases/tag/1.0.0.1-Alpha'">View on GitHub</button>
+                            <button id="changlog" onclick="window.location.href='https://github.com/SolaLabs/sola.compiler/compare/1.0.0.0-Alpha...1.0.0.1-Alpha'">Changelog</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <p id="foot">2025 Sola Labs Development</p>
+            <div class="links">
+                <a id="donate" href="https://www.paypal.com/donate/?hosted_button_id=R9J29XWPD3CZ2">Donate</p>
+                <a id="email" href="MailTo:sola.labs.development@gmail.com">Email</p>
+                <a id="github" href="https://github.com/SolaLabs">GitHub</a>
+            </div>
+        </footer>
+    </body>
+</html>
