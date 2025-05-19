@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="Styles/divider.css">
         <link rel="stylesheet" href="Styles/links.css">
         <link rel="stylesheet" href="Styles/main.css">
+        <link rel="stylesheet" href="Styles/tags.css">
     </head>
     <body>
         <header>
@@ -26,24 +27,25 @@
                 <h1 id ="title">What's new?</h1>
                 <h2 id ="subtitle">Select a category to find out.</h2>
                 <div class="categories">
-                    <button class="navigation" id="announcements" onclick="window.location.href='announcements.html'">Announcements</button>
-                    <button class="navigation" id="tutorials" onclick="window.location.href='tutorials.html'">Tutorials</button>
-                    <button class="navigation" id="updates" onclick="window.location.href='updates.html'">Updates</button>
+                    <button class="control" onclick="window.location.href='announcements.html'">Announcements</button>
+                    <button class="control" onclick="window.location.href='tutorials.html'">Tutorials</button>
+                    <button class="control" onclick="window.location.href='updates.html'">Updates</button>
                 </div>
             </div>
             <div class="content">
                 <h2 id ="subtitle">Recent Announcements</h2>
                 <div class="divider">
                     <div id="content">
-                        <h2 id = "title">Version 1.0.0.3 Alpha Release</h2>
-                        <p>Sunday, May 18th, 2025</p>
+                        <h2 id = "title">Sola Compiler</h2>
+                        <h2 id = "subtitle">Version 1.0.0.3 Alpha</h2>
+                        <p class="date">Sunday, May 18th, 2025</p>
                         <p>Our newest revision of the Sola Compiler is now available to download!</p>
-                        <p>This application is available for MacOS, Windows, and Linee.
-                        Please view our <a href="">license</a> agreement before using this software.</p>
+                        <p>This application is available for MacOS, Windows, and Linux.
+                        Please view our <a href="https://github.com/SolaLabs/sola.compiler/blob/main/LICENSE">license</a> agreement before using this software.</p>
                         </p>
-                        <div id="navigation">
-                            <button id="download" class="accent" onclick="window.location.href='https://github.com/SolaLabs/sola.compiler/releases/tag/1.0.0.3-Alpha'">Download</button>
-                            <button id="more" onclick="window.location.href='Updates/Alpha/1.0.0.3.html'">More</button>
+                        <div class="controls">
+                            <button class="accent" onclick="window.location.href='https://github.com/SolaLabs/sola.compiler/releases/tag/1.0.0.3-Alpha'">Download</button>
+                            <button onclick="window.location.href='Announcements/Releases/1.0.0.3.html'">More</button>
                         </div>
                     </div>
                     <img id="image" class="icon" alt="Sola Icon Only" height = 360px width= 783px src = "../../Assets/Logos/sola_icon_only.png">

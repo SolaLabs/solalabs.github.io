@@ -1,0 +1,61 @@
+.tutorial 
+{
+    align-content: start;
+    display: flex;
+    margin: 4%;
+    justify-content: center;
+}
+.tutorial #image
+{
+    height: 50%;
+    width: 50%;
+    max-height: 512px;
+    max-width: 512px;
+    margin: 0%;
+}
+.tutorial button
+{
+    width: 30%;
+    background-color: rgb(0,0,0);
+    border-style: none;
+    box-shadow: rgb(150,150,150) 0 10px 15px;
+    color: white;
+    padding: 2% 0;
+}
+.tutorial #content
+{
+    margin: 4%;
+}
+.tutorial #content p 
+{
+    margin: 2%;
+}
+.tutorial #content #title 
+{
+    font-size: 400%;
+    text-align: left;
+    margin: 2%;
+}
+.tutorial #content #subtitle
+{
+    font-size: 200%;
+    text-align: left;
+    margin: 2% 2% 4% 2%;
+}
+.tutorial #content #level 
+{
+    background-color: rgb(0,200,255);
+    color: #fff;
+    display: block;
+    padding: 2%;
+    text-align: center;
+    width: 15%;
+}
+.tutorial #content #navigation 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10% 0 4% 0;
+    height: 3em;
+}

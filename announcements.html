@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Updates</title>
+        <title>Announcements</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="Styles/buttons.css">
@@ -24,28 +24,24 @@
         </header>
         <main>
             <div class="content">
-                <p class="linkbar"><a href="news.html">News</a> > <a class="current">Updates</a></p>
-                <h1 id ="title">Updates</h1>
-                <h2 id ="subtitle">Choose a release.</h2>
+                <p class="linkbar"><a href="news.html">News</a> > <a class="current">Announcements</a></p>
+                <h1 id ="title">Announcements</h1>
+                <h2 id ="subtitle">Get the latest from Sola Labs.</h2>
                 <div class="categories">
-                    <button class="control" onclick="window.location.href='Updates/alpha.html'">Alpha</button>
+                    <button class="control" onclick="window.location.href='Announcements/releases.html'">Releases</button>
                 </div>
             </div>
             <div class="content">
                 <h2 id ="subtitle">Recent</h2>
                 <div class="divider">
-                    <div id="content" style="width: 200%;">
-                        <h2 id = "title">Version 1.0.0.3 Alpha</h2>
-                        <h2 id = "subtitle">Revision 3</h2>
-                        <p class="date">Sunday, May 18th, 2025</p>
-                        <p>Version Alpha - Revision 3 of the Sola Compiler is now live on GitHub! 
-                        You can now clone this repository to download our application.</p>
-                        <p>This software is avaible for MacOS, Windows, and Linux. 
-                        Please note, this software is still in development, and may quit unexpectedly.</p>
-                        <p>You can view the full changelog for this update <a href="https://github.com/SolaLabs/sola.compiler/compare/1.0.0.2-Alpha...1.0.0.3-Alpha">here</a></p>
+                    <div id="content">
+                        <h3 id = "title">Sola Compiler</h2>
+                        <h3 id = "subtitle">Version 1.0.0.3 Alpha</h2>
+                        <h3 class="description">Sunday, May 18th 2025</h3>
+                        <p>Our newest release of the Sola Compiler is now available to download! Revision 3 is live on GitHub.</p>
+                        <p>This application is available for MacOS, Windows, and Linux. Learn more about the release, and how to downlaod it!</p>
                         <div class="controls">
-                            <button class="accent" onclick="window.location.href='https://github.com/SolaLabs/sola.compiler/releases/tag/1.0.0.3-Alpha'">Download</button>
-                            <button onclick="window.location.href='Updates/Alpha/1.0.0.3.html'">More</button>
+                            <button id="learn" onclick="window.location.href='Announcements/Releases/1.0.0.3.html'">More</button>
                         </div>
                     </div>
                     <img id="image" class="icon" alt="Sola Icon" height = 512px width= 512px src = "../../Assets/Icons/icon_512x512.png">

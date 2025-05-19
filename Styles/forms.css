@@ -42,7 +42,7 @@
     border-style: none;
     box-shadow: rgb(150,150,150) 0 10px 15px;
     color: white;
-    height: 5em;
+    height: 3.5em;
     margin-top: 4%;
     width: 50%;
 }
@@ -50,7 +50,7 @@
 {
     border-style: none;
     box-shadow: rgb(150,150,150) 0 10px 15px;
-    height: 5em;
+    height: 4em;
     margin: 2%;
     padding: 0 2%;
     width:90%;
@@ -61,14 +61,14 @@
     border-style: none;
     box-shadow: rgb(150,150,150) 0 10px 15px;
     color: white;
-    height: 5em;
+    height: 3.5em;
     width: 15%;
 }
 .field #content .interface input
 {
     border-style: none;
     box-shadow: rgb(150,150,150) 0 10px 15px;
-    height: 5em;
+    height: 3.5em;
     margin-right: 2%;
     padding: 0 2%;
     width: 50%;

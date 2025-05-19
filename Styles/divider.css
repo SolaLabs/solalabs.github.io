@@ -16,17 +16,9 @@
 .divider button
 {
     width: 30%;
-    background-color: rgb(0,0,0);
     border-style: none;
-    box-shadow: rgb(150,150,150) 0 10px 15px;
-    color: white;
-    padding: 2% 0;
 }
-.divider .accent
-{
-    background-color: rgb(255,200,0);
-    color: black
-}
+
 .divider #content
 {
     margin: 4%;
@@ -46,11 +38,4 @@
 .divider #content p 
 {
     margin: 2%;
-}
-.divider #content #navigation 
-{
-    display: flex;
-    justify-content: space-around;
-    margin: 10% 0 4% 0;
-    height: 4em;
 }
